@@ -17,7 +17,7 @@ export default function Home() {
                         <h1
                             className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl mb-4">冒冒守护平台
                                         </h1>
-                        <p className="text-lg sm:text-xl opacity-90 mb-8">您的《冒险岛》游戏数据管理与分析助手，助您轻松提升战力，规划装备路线。
+                        <p className="text-lg sm:text-xl opacity-90 mb-8">您的《冒险岛》游戏数据管理与分析助手，助您轻松提升战力。
                                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
