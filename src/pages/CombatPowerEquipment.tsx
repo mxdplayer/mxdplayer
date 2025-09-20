@@ -552,8 +552,8 @@ export default function CombatPowerEquipment() {
     return (
         <div className="space-y-8">
             {}
-            <div
-                className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+			<div
+                className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
                     <h1 className="text-3xl font-bold text-gray-900 dark:text-white">战力装备系统</h1>
                     <p className="text-gray-600 dark:text-gray-300">管理角色装备，计算战斗力，分析属性收益
@@ -645,7 +645,7 @@ export default function CombatPowerEquipment() {
                     </div>
                 </div>
                 {}
-                <div className="lg:col-span-3">
+				<div className="lg:col-span-3 overflow-hidden">
                     {!selectedCharacter ? <div
                         className="flex flex-col items-center justify-center h-[500px] bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700">
                         <i
@@ -660,7 +660,7 @@ export default function CombatPowerEquipment() {
                                                                                                                             </h2>
                         </div>
                         <div className="p-6">
-                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+							<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                 <div className="lg:col-span-1 space-y-6">
                                      <div
                                          className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 border border-gray-100 dark:border-gray-700">
