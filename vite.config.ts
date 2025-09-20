@@ -12,6 +12,5 @@ function getPlugins() {
 }
 
 export default defineConfig({
-  plugins: getPlugins(),
-  base: '/mxdplayer.github.io/'
+  plugins: getPlugins()
 });
