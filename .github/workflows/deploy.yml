@@ -1,0 +1,43 @@
+# 工作流名称
+name: Deploy to GitHub Pages
+
+# 触发条件：main分支的push事件
+on:
+  push:
+    branches: [ main ]
+
+# 任务
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检出代码
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # 设置Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      # 安装PNPM
+      - name: Setup PNPM
+        run: npm install -g pnpm
+
+      # 安装依赖
+      - name: Install dependencies
+        run: pnpm install
+
+      # 构建项目
+      - name: Build
+        run: pnpm run build
+
+      # 部署到GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
