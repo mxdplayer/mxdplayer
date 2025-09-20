@@ -15,7 +15,13 @@ jobs:
       # 检出代码
       - name: Checkout
         uses: actions/checkout@v3
-
+      
+      - name: Install Node.js and pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8  # 指定PNPM版本
+          run_install: true  # 自动运行pnpm install
+      
       # 设置Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v3
