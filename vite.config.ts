@@ -12,5 +12,6 @@ function getPlugins() {
 }
 
 export default defineConfig({
-  plugins: getPlugins()
+  plugins: getPlugins(),
+  base: 'https://github.com/mxdplayer/mxdplayer.github.io/blob/gh-pages/'
 });
