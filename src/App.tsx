@@ -21,8 +21,8 @@ export default function App() {
     <AuthContext.Provider
       value={{ isAuthenticated, setIsAuthenticated, logout }}
     >
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-6 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto w-full">
+       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-4 px-3 sm:px-4 lg:px-6">
+        <div className="max-w-7xl mx-auto w-full px-2">
           <MainNavigation />
           <Routes>
             <Route path="/" element={<Home />} />
