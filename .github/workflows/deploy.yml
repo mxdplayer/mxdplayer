@@ -40,7 +40,10 @@ jobs:
       # 构建项目
       - name: Build
         run: pnpm run build
-
+    
+      - name: Add .nojekyll file
+        run: touch ./dist/.nojekyll
+      
       # 部署到GitHub Pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
