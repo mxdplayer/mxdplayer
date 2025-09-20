@@ -12,5 +12,6 @@ function getPlugins() {
 }
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production' ? '/mxdplayer.github.io/' : '/',
   plugins: getPlugins(),
 });
