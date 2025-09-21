@@ -46,7 +46,12 @@ export default function CombatPowerEquipment() {
         }, {
             attribute: "criticalRate",
             value: 10
-        }, {
+        }]
+    }, {
+        id: "V5Skill2",
+        name: "V技能精通",
+        category: "skillS",
+        effects: [{
             attribute: "ignoreDefenseRate",
             value: 20
         }]
@@ -73,7 +78,7 @@ export default function CombatPowerEquipment() {
     }, {
         id: "active",
         name: "活动Buff",
-        category: "skill",
+        category: "potion",
         effects: [{
             attribute: "bossDamage",
             value: 15
@@ -101,7 +106,7 @@ export default function CombatPowerEquipment() {
     }, {
         id: "gongjiang",
         name: "高级武器精炼[A]",
-        category: "skill",
+        category: "potion",
         effects: [{
             attribute: "criticalDamage",
             value: 5
@@ -133,7 +138,7 @@ export default function CombatPowerEquipment() {
     }, {
         id: "roomBoss",
         name: "小屋增益",
-        category: "skill",
+        category: "potion",
         effects: [{
             attribute: "bossDamage",
             value: 15
@@ -149,7 +154,7 @@ export default function CombatPowerEquipment() {
     }, {
         id: "union",
         name: "联盟增益",
-        category: "skill",
+        category: "potion",
         effects: [{
             attribute: "baseAttack",
             value: 30
@@ -157,7 +162,7 @@ export default function CombatPowerEquipment() {
     }, {
         id: "monv",
         name: "魔女气象",
-        category: "skill",
+        category: "potion",
         effects: [{
             attribute: "baseAttack",
             value: 85
@@ -197,7 +202,7 @@ export default function CombatPowerEquipment() {
     }, {
         id: "vip",
         name: "vip气象",
-        category: "skill",
+        category: "potion",
         effects: [{
             attribute: "baseAttack",
             value: 30
@@ -205,7 +210,7 @@ export default function CombatPowerEquipment() {
     }, {
         id: "family",
         name: "家族气象",
-        category: "skill",
+        category: "potion",
         effects: [{
             attribute: "baseAttack",
             value: 30
@@ -213,7 +218,7 @@ export default function CombatPowerEquipment() {
     }, {
         id: "564",
         name: "564气象",
-        category: "skill",
+        category: "potion",
         effects: [{
             attribute: "baseAttack",
             value: 30
