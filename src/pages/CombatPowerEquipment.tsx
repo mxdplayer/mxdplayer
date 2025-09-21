@@ -788,7 +788,7 @@ export default function CombatPowerEquipment() {
   																	 src="../assets/images/001.png"
                                                                      alt={buff.name} 
                                                                      className={`ml-2 mr-2 w-5 h-5 object-contain ${
-                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                         ''
                                                                      }`}
                                                                  />
                                                              ) : (
