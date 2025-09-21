@@ -129,7 +129,7 @@ export default function CharacterCreation() {
             // 等级小于200，使用暗淡渐变
             lightGradient += " opacity-50";
             darkGradient += " opacity-50";
-        } else if (formData.level > 260) {
+        } else if (formData.level < 260) {
             lightGradient += " opacity-75";
             darkGradient += " opacity-75";
         }
