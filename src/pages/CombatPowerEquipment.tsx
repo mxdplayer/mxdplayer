@@ -787,9 +787,7 @@ export default function CombatPowerEquipment() {
                                                                  <img 
   																	 src="../assets/images/001.png"
                                                                      alt={buff.name} 
-                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
-                                                                         ''
-                                                                     }`}
+                                                                     
                                                                  />
                                                              ) : (
                                                                  <i className={`fa-solid ${icon} ml-2 mr-2 ${
