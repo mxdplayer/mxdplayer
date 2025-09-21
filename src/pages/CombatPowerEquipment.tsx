@@ -784,10 +784,20 @@ export default function CombatPowerEquipment() {
                                                         }}>
                                                         <div className="flex items-center">
                                                             {buff.id === "int10" ? (
-                                                                 <img 
-  																	 src="../assets/images/001.png"
+                                                                 <img
+                                                                     src="../assets/images/001.png"
                                                                      alt={buff.name} 
-                                                                     
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "564" ? (
+                                                                 <img
+                                                                     src="../assets/images/002.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
                                                                  />
                                                              ) : (
                                                                  <i className={`fa-solid ${icon} ml-2 mr-2 ${
