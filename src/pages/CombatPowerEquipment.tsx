@@ -785,7 +785,7 @@ export default function CombatPowerEquipment() {
                                                         <div className="flex items-center">
                                                             {buff.id === "int10" ? (
                                                                  <img
-                                                                     src="../assets/images/001.png"
+                                                                     src="../assets/001.png"
                                                                      alt={buff.name} 
                                                                      className={`ml-2 mr-2 w-5 h-5 object-contain ${
                                                                          activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
@@ -793,7 +793,7 @@ export default function CombatPowerEquipment() {
                                                                  />
                                                              ) : buff.id === "564" ? (
                                                                  <img
-                                                                     src="../assets/images/002.png"
+                                                                     src="../assets/002.png"
                                                                      alt={buff.name} 
                                                                      className={`ml-2 mr-2 w-5 h-5 object-contain ${
                                                                          activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
