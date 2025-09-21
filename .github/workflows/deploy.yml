@@ -11,10 +11,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:
+    steps:      
       # 检出代码
       - name: Checkout
         uses: actions/checkout@v3
+
+      # 复制图片
+      - name: Copy Png files
+        run: |
+          mkdir -p temp_dir
+          cp -r ./assets/images/*.png temp_dir/
       
       - name: Install Node.js and pnpm
         uses: pnpm/action-setup@v2
@@ -43,6 +49,9 @@ jobs:
     
       - name: Add .nojekyll file
         run: touch ./dist/.nojekyll
+
+      - name: Move png
+        run: mv temp_dir/* ./dist/assets/
       
       # 部署到GitHub Pages
       - name: Deploy
