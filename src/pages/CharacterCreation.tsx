@@ -127,14 +127,11 @@ export default function CharacterCreation() {
         // 根据等级调整渐变
         if (formData.level < 200) {
             // 等级小于200，使用暗淡渐变
-            lightGradient += " opacity-70";
-            darkGradient += " opacity-70";
+            lightGradient += " opacity-50";
+            darkGradient += " opacity-50";
         } else if (formData.level > 260) {
-            // 等级大于260，使用深邃渐变
-            // 将浅色方案中的-50替换为-100，使颜色更深
-            lightGradient = lightGradient.replace(/-50\b/g, "-100");
-            // 深色方案保持不变，但可以增加饱和度
-            darkGradient = darkGradient.replace(/900\/30\b/g, "900/60");
+            lightGradient += " opacity-75";
+            darkGradient += " opacity-75";
         }
         
         setGradientClass(`${lightGradient} dark:${darkGradient}`);
