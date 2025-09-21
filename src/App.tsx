@@ -6,8 +6,6 @@ import Home from "@/pages/Home";
 import CombatPowerEquipment from "@/pages/CombatPowerEquipment";
 import CharacterCreation from "@/pages/CharacterCreation";
 
-import MarginalBenefitAnalysis from "@/pages/MarginalBenefitAnalysis";
-import EquipmentComparison from "@/pages/EquipmentComparison";
 import LotterySimulation from "@/pages/LotterySimulation";
 
 export default function App() {
@@ -28,10 +26,6 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/combat-power-equipment" element={<CombatPowerEquipment />} />
             <Route path="/character-creation" element={<CharacterCreation />} />
-
-
-            <Route path="/marginal-benefit-analysis" element={<MarginalBenefitAnalysis />} />
-            <Route path="/equipment-comparison" element={<EquipmentComparison />} />
             <Route path="/lottery-simulation" element={<LotterySimulation />} />
           </Routes>
         </div>
