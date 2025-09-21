@@ -804,6 +804,94 @@ export default function CombatPowerEquipment() {
                                                                          activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
                                                                      }`}
                                                                  />
+                                                             ) : buff.id === "blue" ? (
+                                                                 <img
+                                                                     src="../assets/003.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "white" ? (
+                                                                 <img
+                                                                     src="../assets/004.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "family" ? (
+                                                                 <img
+                                                                     src="../assets/005.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "park" ? (
+                                                                 <img
+                                                                     src="../assets/006.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "bossB" ? (
+                                                                 <img
+                                                                     src="../assets/007.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "ignoreB" ? (
+                                                                 <img
+                                                                     src="../assets/008.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "active" ? (
+                                                                 <img
+                                                                     src="../assets/009.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "union" ? (
+                                                                 <img
+                                                                     src="../assets/014.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "monv" ? (
+                                                                 <img
+                                                                     src="../assets/015.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "purple" ? (
+                                                                 <img
+                                                                     src="../assets/016.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
+                                                             ) : buff.id === "vip" ? (
+                                                                 <img
+                                                                     src="../assets/017.png"
+                                                                     alt={buff.name} 
+                                                                     className={`ml-2 mr-2 w-5 h-5 object-contain ${
+                                                                         activeBuffs.includes(buff.id) ? 'ring-2 ring-blue-500 rounded-full' : ''
+                                                                     }`}
+                                                                 />
                                                              ) : (
                                                                  <i className={`fa-solid ${icon} ml-2 mr-2 ${
                                                                      activeBuffs.includes(buff.id) ? 'text-blue-500' : 'text-gray-500'
