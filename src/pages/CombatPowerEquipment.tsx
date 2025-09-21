@@ -50,7 +50,7 @@ export default function CombatPowerEquipment() {
     }, {
         id: "V5Skill2",
         name: "V技能精通",
-        category: "skillS",
+        category: "skill",
         effects: [{
             attribute: "ignoreDefenseRate",
             value: 20
